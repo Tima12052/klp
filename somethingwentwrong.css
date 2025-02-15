@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: aliceblue;
+}
