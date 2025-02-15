@@ -18,7 +18,7 @@ const userData = {
     confirmPassword: ConfirmPassword
 };
 
-fetch('', {
+fetch('tima12052.github.io/klp/', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
