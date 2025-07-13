@@ -538,23 +538,588 @@
 // };
 // car.dspi()
 
-const yabluko = { name12: '🍎', price: 50 }
-const venomgrad = { name13: '🍇', price: 70 }
-const limon = { name14: '🍋', price: 60 }
-const klubnika = { name15: '🍓', price: 110 }
+// const yabluko = { name12: '🍎', price: 50 }
+// const venomgrad = { name13: '🍇', price: 70 }
+// const limon = { name14: '🍋', price: 60 }
+// const klubnika = { name15: '🍓', price: 110 }
 
-const cart = {
-    items: [],
-    getItems() {},
-    add(product) {},
-    remove(productName) {},
-    clear() {},
-    countTotalPrice() {},
-    increaseQuantity(productName) {},
-    decreaseQuantity(productName) {},
-  };
-cart.getItems = function () {
-    this.items.push(yabluko);
-    return this.items;
-}
-console.log(cart.getItems());
+// const cart = {
+//     items: [],
+//     getItems() {},
+//     add(product) {},
+//     remove(productName) {},
+//     clear() {},
+//     countTotalPrice() {},
+//     increaseQuantity(productName) {},
+//     decreaseQuantity(productName) {},
+//   };
+// cart.getItems = function () {
+//     this.items.push(yabluko);
+//     return this.items;
+// }
+// console.log(cart.getItems());
+// const tractor = {
+//   size: 'Big',
+//   color: 'Blue',
+//   motor: 'V12',
+// }
+// for (const key in tractor) {
+//   console.log('value', tractor[key]);
+// } 
+// const tractor = {
+//   size: 'Big',
+//   color: 'Blue',
+//   motor: 'V12',
+// }
+// const Keys = Object.keys(tractor);
+// console.log(Keys);
+// const Values = Object.values(tractor);
+// console.log(Values);
+// const Entries = Object.entries(tractor);
+// console.log(Entries);
+// function findFriendByName(friends, name) {
+//   return friends.find(friend => friend.name === name) || null;
+// }
+
+// function getAllNames(friends) {
+//   return friends.map(friend => friend.name);
+// }
+
+// function getOnlineFriends(friends) {
+//   return friends.filter(friend => friend.online).map(friend => friend.name);
+// }
+
+// function getOfflineFriends(friends) {
+//   return friends.filter(friend => !friend.online).map(friend => friend.name);
+// }
+
+// console.log(findFriendByName(friends, 'Poly'));
+// console.log(findFriendByName(friends, 'Chelsy'));
+
+// console.log(getAllNames(friends));
+
+// console.log(getOnlineFriends(friends));
+
+// console.log(getOfflineFriends(friends));
+// const friends = [
+//     { name: 'Mango', online: false },
+//     { name: 'Kiwi', online: true },
+//     { name: 'Poly', online: false },
+//     { name: 'Ajax', online: false },
+// ];
+
+
+// function findFriendByName(friends, name) {
+//     for (const index in friends) {
+//         if (friends[index].name === name) {
+//             return friends[index];
+//         }
+//     }
+//     return null;
+// }
+
+// function getAllNames(friends) {
+//     const names = [];
+//     for (const index in friends) {
+//         names.push(friends[index].name);
+//     }
+//     return names;
+// }
+
+// function getOnlineFriends(friends) {
+//     const onlineFriends = [];
+//     for (const index in friends) {
+//         if (friends[index].online) {
+//             onlineFriends.push(friends[index].name);
+//         }
+//     }
+//     return onlineFriends;
+// }
+
+// function getOfflineFriends(friends) {
+//     const offlineFriends = [];
+//     for (const index in friends) {
+//         if (!friends[index].online) {
+//             offlineFriends.push(friends[index].name);
+//         }
+//     }
+//     return offlineFriends;
+// }
+
+// console.log(findFriendByName(friends, 'Poly'));
+// console.log(findFriendByName(friends, 'Chelsy'));
+
+// console.log(getAllNames(friends));
+
+// console.log(getOnlineFriends(friends));
+
+// console.log(getOfflineFriends(friends)); 
+// const test1 = [1, 2, 3, 4, 5];
+// const test = [1, 2, 3, 4, 5];
+// console.log(Math.min(...test, ...test1));
+// const copytext = [...test];
+// console.log(copytext);
+// const a = {
+//     x: 5,
+//     y: 4,
+// }
+
+// const b = {
+//     x: 11,
+//     w: 22,
+// }
+// const c = Object.assign({}, a, b);
+// console.log(c);
+// const products = [
+//     { name: 'Laptop', price: 1000, category: 'Electronics', stock: 5 },
+//     { name: 'Phone', price: 500, category: 'Electronics', stock: 10 },
+//     { name: 'Shirt', price: 50, category: 'Clothing', stock: 20 },
+//     { name: 'Pants', price: 60, category: 'Clothing', stock: 15 },
+//     { name: 'Headphones', price: 200, category: 'Electronics', stock: 8 },
+//     { name: 'Shoes', price: 80, category: 'Clothing', stock: 12 },
+// ];
+
+// function getTotalValueByCategory(products, category) {
+//     let totalValue = 0;
+//     for (const index in products) {
+//         if (products[index].category === category) {
+//             totalValue += products[index].price * products[index].stock;
+//         }
+//     }
+//     return totalValue;
+// }
+
+// console.log(getTotalValueByCategory(products, 'Electronics'));
+// console.log(getTotalValueByCategory(products, 'Clothing'));
+// const wwefwf = {
+//     name1: 'roman',
+//     robota: 'programist',
+//     city: 'lviv',
+//     family: 'big',
+//     info() {
+//         console.log('i love me')
+//     },
+//     items: [1, 2, 3, 4, 5],
+//     education: {uni: 'lny', school: 'stryi',}
+// }
+// const { name1, robota, city, family, years = 20, items: [item1, item2, item3, item4, item5]} = wwefwf;
+// console.log(name1, robota, city, family, years);
+// console.log(wwefwf);
+
+
+
+
+// const user = {
+//   name1: 'John',
+//   age: 30,
+//   email: 'john@example.com'
+// }
+// const { name1, age, email } = user;
+// console.log(name1, age, email);
+
+
+
+// const car = {
+//   make: 'Toyota',
+//   model: 'Camry',
+//   year: 2020,
+//   features: ['power windows', 'rear camera', 'navigation'],
+//   safety: {
+//     airbags: true,
+//     antilock_brakes: true,
+//     stability_control: true
+//   }
+// }
+// const { make, model, year, features: [feature1, feature2, feature3], safety: { airbags, antilock_brakes, stability_control } } = car;
+// console.log(make, model, year, feature1, feature2, feature3, airbags, antilock_brakes, stability_control);
+
+
+// const movie = {
+//   title: 'The Shawshank Redemption',
+//   director: {
+//     name: 'Frank Darabont',
+//     nationality: 'American'
+//   },
+//   actors: ['Tim Robbins', 'Morgan Freeman'],
+//   release_year: 1994,
+//   ratings: {
+//     imdb: 9.3,
+//     rotten_tomatoes: 90
+//   }
+// }
+// const { title, director: { name: directorName, nationality }, actors: [actor1, actor2], release_year, ratings: { imdb, rotten_tomatoes } } = movie;
+// console.log(title, directorName, nationality, actor1, actor2, release_year, imdb, rotten_tomatoes);
+
+
+
+// const books = {
+//   count: 3,
+//   list: [
+//     {
+//       title: 'The Great Gatsby',
+//       author: 'F. Scott Fitzgerald',
+//       year: 1925
+//     },
+//     {
+//       title: 'To Kill a Mockingbird',
+//       author: 'Harper Lee',
+//       year: 1960
+//     },
+//     {
+//       title: '1984',
+//       author: 'George Orwell',
+//       year: 1949
+//     }
+//   ]
+// }
+// const { count, list: [{ title: book1Title, author: book1Author, year: book1Year }, { title: book2Title, author: book2Author, year: book2Year }, { title: book3Title, author: book3Author, year: book3Year }] } = books;
+// console.log(count, book1Title, book1Author, book1Year, book2Title, book2Author, book2Year, book3Title, book3Author, book3Year);
+// const text = [1, 2, 3, 4, 5];
+// const [var1, var2,...rest] = text;
+// console.log(`я чекаю до ${var1}, а потім до ${var2}, ${rest}`);
+// function personInfo({ name, surname, age }) {
+//   return `Мене звати ${name} ${surname} і мені ${age} років`;
+// }
+
+// const person = {
+//   name: 'Nelli',
+//   surname: 'Laroy',
+//   age: 25
+// };
+
+// console.log(personInfo(person));
+// function calculateAverageGrade({ grades }) {
+//   let total = 0;
+//   for (let i = 0; i < grades.length; i++) {
+//     total += grades[i];
+//   }
+//   return total / grades.length;
+// }
+
+// const student = {
+//   name: 'Bruce',
+//   surname: 'Lee',
+//   grades: [4, 5, 3]
+// };
+
+// console.log(calculateAverageGrade(student));
+
+// const GDONSTEAM = [1, 2, 3, 4, 5];
+// const double = GDONSTEAM.map(element => element * 2);
+// console.log(double);
+// const players = [
+//     { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+//     { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+//     { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+// ];
+
+// const playerNames = players.map(player => player.name);
+// console.log(playerNames);
+// const updatedPlayers = players.map(player => ({
+//     ...player,
+//     points: player.points * 1.1
+// }));
+// console.log(updatedPlayers);
+// const offlinePlayers = players.filter(player => !player.online);
+// console.log('Offline Players:', offlinePlayers);
+
+// const onlinePlayers = players.filter(player => player.online);
+// console.log('Online Players:', onlinePlayers);
+
+// const hardcorePlayers = players.filter(player => player.timePlayed > 250);
+// console.log('Hardcore Players:', hardcorePlayers);
+// const sivmas = [1, 2, 3, 4, 5];
+// let sum = sivmas.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log(sum);
+
+// const tweets = [
+//   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+//   { id: '001', likes: 2, tags: ['html', 'css'] },
+//   { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+//   { id: '003', likes: 8, tags: ['css', 'react'] },
+//   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+// ];
+// let likes =  tweets.reduce((totalikes, tweests) => totalikes + tweests.likes, 0);
+// let tagi = tweets.reduce((totaltegs, twity) => {totaltegs.push(...twity.tags); return totaltegs}, []);
+// console.log(tagi);
+// console.log(likes);
+
+
+// const cart = [
+//   { label: 'Apples', price: 100, quantity: 2 },
+//   { label: 'Bananas', price: 120, quantity: 3 },
+//   { label: 'Lemons', price: 70, quantity: 4 },
+// ];
+// let kkt = cart.reduce((totalkkt, kkt1) => totalkkt + kkt1.quantity, 0)
+// // console.log(kkt);
+// const numbers = [1, 2, 3, 4, 5];
+// let sz = numbers.reduce((prostozminnayakutivivodish, tobidestrukturizatsiyanepotribna) => prostozminnayakutivivodish + tobidestrukturizatsiyanepotribna, 0)/ numbers.length
+
+// console.log(sz)
+
+
+// const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+// let fruitCount = fruits.reduce((totalfruins, fruits) => {totalfruins[fruits] = (totalfruins[fruits] || 0 )+ 1; return totalfruins}, {});
+// // console.log(fruitCount);
+// const imena = ['Oleg', 'Vasyl', 'Oleg', 'Vasyl', 'Oleg', 'Vasyl'];
+// const sorted = (a, b) => imena.b - imena.a;
+// // const numbers = [4, 7, 1, 0, 5, 3, 6];
+// console.log(imena.sort((a, b) => b.localeCompare(a)));
+// const players = [
+//   { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+//   { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+//   { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+//   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+//   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+// ];
+// players.sort((a, b) => a.timePlayed - b.timePlayed);
+// const playedtime = players.map(player => player.timePlayed);
+// console.log(playedtime);
+
+// const arr = [
+//     { name1: 'John', age: 32 },
+//     { name1: 'Jane', age: 26 },
+//     { name1: 'Mike', age: 42 },
+//     { name1: 'Emily', age: 29 }
+// ];
+// arr.sort((a, b) => a.name1.localeCompare(b.name1));
+// const names = arr.map(item => item.name1);
+// console.log(names);
+// const products = [
+//     { name: 'Product 1', price: 100, quantity: 5 },
+//     { name: 'Product 2', price: 50, quantity: 10 },
+//     { name: 'Product 3', price: 200, quantity: 2 },
+//     { name: 'Product 4', price: 50, quantity: 5 }
+// ];
+// products.sort((a, b) => {
+//     if (b.price !== a.price) {
+//         return b.price - a.price;
+//     }
+//     return a.quantity - b.quantity;
+// });
+// console.log(products);
+// const objectpronouns = {
+//     username: 'John',
+//     account: "google",
+//     age: 30,
+//     isOnline: true,
+//     ipadkid() {
+//         console.log(`I am ${this.age} and i am ipadkid`);
+//     }
+// }
+// objectpronouns.ipadkid(); 
+// class Human {
+//     constructor(legs, arms, colorofeyes, fingers, colorofhair) {
+//         this.legs = legs;
+//         this.arms = arms;
+//         this.colorofeyes = colorofeyes;
+//         this.fingers = fingers;
+//         this.colorofhair = colorofhair;
+//     }
+//     govority() {
+//         console.log(`i have ${this.legs} legs`);
+
+//     }
+// }
+// const romasik = new Human(2, 2, 'red', 65, 'blue');
+// console.log(romasik); 
+// romasik.govority();
+// class Carton {
+//     constructor({color, width, size, type}) {
+//         this.color = color;
+//         this.width = width;
+//         this.size = size;
+//         this.type = type;
+//     }
+// }
+// const Cartonovyycolovik = new Carton({color: 'gray', width: 1, size: 100, type: 'normal'});
+// console.log(Cartonovyycolovik);
+// class Person {
+//     constructor({firstname, lastname}) {
+//         this.firstName = firstname;
+//         this.lastName = lastname;
+//     }
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+// const person1 = new Person({firstname: 'John', lastname: 'Doe'});
+// console.log(person1.getFullName()); 
+// class Rectangle {
+//     constructor({width, height}) {
+//         this.width = width;
+//         this.height = height;
+//     }
+//     getArea() {
+//         return this.width * this.height;
+//     }
+// }
+// const rectangle1 = new Rectangle({width: 10, height: 5});
+// console.log(rectangle1.getArea());  
+// class Calculator {
+//     add(a, b) {
+//         return a + b;
+//     }
+//     subtract(a, b) {
+//         return a - b;
+//     }
+//     multiply(a, b) {
+//         return a * b;
+//     }
+//     divide(a, b) {
+//         return a / b;
+//     }
+// }
+// const calculator = new Calculator();
+// console.log(calculator.add(5, 3));
+// console.log(calculator.subtract(10, 4));
+// console.log(calculator.multiply(2, 6));
+// console.log(calculator.divide(8, 2));
+// console.log(calculator.divide(8, 0));
+// let text = document.querySelector('#p-id');
+// text.textContent = 'traktor soy gyd';
+// text.style.backgroundColor = 'red';
+// Отримати доступ до списку
+// const navList = document.querySelector('.site-nav');
+// navList.style.backgroundColor = 'yellow';
+// const link = document.querySelector("a")
+// link.classList.add('site-nav__link');
+// const ldet = document.querySelector('a[href="https://"]');
+// ldet.style.fontSize = '100px';
+// let lirililarila = document.querySelectorAll('a[href^="https://"]');
+// lirililarila.forEach(element => {
+//     elment.style.backgroundColor = 'orange';
+// });
+// const h1 = document.querySelector('h1');
+// h1.textContent = 'Додайте заголовок до тексту та стилізуйте його за допомогою додаткового класу. Замініть клас на заголовку. Перевірте чи містить посилання клас list';
+// h1.className = 'title';
+// h1.className = 'itle';
+// h1.style.backgroundColor = 'blue';
+// const Link = document.querySelector('a');
+// console.log(Link.classList.contains('list'));
+// const num1 = document.querySelector('#num1');
+// const num2 = document.querySelector('#num2');
+
+// const result = document.querySelector('#result');
+
+// function calculate(operator) {
+//     const a = parseFloat(num1.value);
+//     const b = parseFloat(num2.value);
+//     let res;
+//     switch (operator) {
+//         case '+':
+//             res = a + b;
+//             break;
+//         case '-':
+//             res = a - b;
+//             break;
+//         case '*':
+//             res = a * b;
+//             break;
+//         case '/':
+//             res = a / b;
+//             break;
+//         default:
+//             res = '';
+//     }
+//     result.textContent = res;
+// }
+// const text = document.createElement('h1');
+// text.textContent = "textcontent";
+// document.body.append(text);
+// console.log(text);
+// const item = document.createElement('li');
+// const list = document.querySelector('.list');
+// item.textContent = 'New Item';
+// list.append(item);
+// list.prepend(item);
+// const colorPickerOptions = [
+//     { label: 'red', color: '#F44336' },
+//     { label: 'green', color: '#4CAF50' },
+//     { label: 'blue', color: '#2196F3' },
+//     { label: 'grey', color: '#607D8B' },
+//     { label: 'pink', color: '#E91E63' },
+//     { label: 'indigo', color: '#3F51B5' },
+// ];
+
+// const colorPickerContainer = document.querySelector('.js-color-picker');
+
+// for (const option of colorPickerOptions) {
+//     const btn = document.createElement('button');
+//     btn.type = 'button';
+//     btn.textContent = option.label;
+//     btn.style.backgroundColor = option.color;
+//     btn.style.color = '#fff';
+//     btn.style.margin = '4px';
+//     colorPickerContainer.appendChild(btn);
+// }
+// const salam = document.querySelector('.salam');
+// salam.innerHTML = '<h1> hi</h1>';
+// salam.insertAdjacentHTML('beforeend', '<h1> gghhghg</h1>');
+// Створення заголовка
+// const header = document.createElement('h1');
+// header.textContent = 'Привіт, це перший мій створений елемент!';
+// header.classList.add('title');
+// document.body.appendChild(header);
+
+// const newul = document.createElement('ul')
+// const newli = document.createElement('li')
+// const newa = document.createElement('a')
+// newli.classList.add('site-nav__item')
+// newa.classList.add("site-nav__link")
+// newa.textContent = 'Про нас'
+// document.body.appendChild(newli)
+// document.body.appendChild(newa)
+// const form = document.querySelector('.add-form');
+// const input = document.querySelector('.li-text');
+// const ul = document.querySelector('.my-list');
+
+// form.onsubmit = function(e) {
+//     e.preventDefault();
+//     if (input.value.trim() !== '') {
+//         const li = document.createElement('li');
+//         li.textContent = input.value;
+//         ul.appendChild(li);
+//         input.value = '';
+//     }
+// };
+
+// 1
+// const jddk = document.createElement('button');
+// jddk.textContent = 'RGB Light';
+// jddk.classList.add('buton');
+// document.body.appendChild(jddk);
+// jddk.addEventListener('click', () => {
+//     const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+//     jddk.style.backgroundColor = randomColor;
+// });
+// 2
+// const jsab2 = document.createElement('h1');
+// const jsab = document.createElement('button');
+// jsab2.textContent = 'tEXT';
+// document.body.appendChild(jsab2);
+// jsab.textContent = 'Додати стилі';
+// document.body.appendChild(jsab);
+// jsab.addEventListener('click', () => {
+//     jsab2.classList.add('title');
+// });
+
+
+// const tgre = document.querySelector('#int1');
+// const spee = document.querySelector('#btn1');
+// spee.addEventListener('submit', () => {
+//     const esfd = document.createElement('p');
+//     esfd.textContent = `${tgre.value}`;
+//     body.appendChild(esfd);
+// });
+const butt = document.querySelector('#btn1');
+const handlClick = (event) => {
+    console.log(event);
+    console.log(event.type);
+    console.log(this)
+    console.log(event.target);
+};
+butt.addEventListener('click', handlClick);
+    

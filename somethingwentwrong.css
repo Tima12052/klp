@@ -1,4 +1,4 @@
-body {
+/* body {
     height: 100vh;
     margin: 0;
     display: flex;
@@ -7,7 +7,19 @@ body {
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
     font-family: Arial, sans-serif;
 }
-
-h1{
-    color: aliceblue;
+.site-nav__link {
+    background-color: rgb(133, 75, 75);
+}
+.title {
+ color: rgb(238, 0, 0);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+.title {
+    color: blue;
+    outline: 1px solid black;
+    outline-offset: 5px;
+    font-size: 2.5rem;
+    text-align: center;
 }
