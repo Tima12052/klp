@@ -1114,12 +1114,57 @@
 //     esfd.textContent = `${tgre.value}`;
 //     body.appendChild(esfd);
 // });
-const butt = document.querySelector('#btn1');
-const handlClick = (event) => {
-    console.log(event);
-    console.log(event.type);
-    console.log(this)
-    console.log(event.target);
-};
-butt.addEventListener('click', handlClick);
-    
+// const butt = document.querySelector('#btn1');
+// const handlClick = (event) => {
+//     console.log(event);
+//     console.log(event.type);
+//     console.log(this)
+//     console.log(event.target);
+// };
+// butt.addEventListener('click', handlClick);
+
+// const init = document.querySelector("#ininit");
+
+// function inputfunct(event) {
+//     let result = event.target.value;
+//     console.log(result)
+// }
+// const trotinpu = _.throttle(inputfunct, 400);
+// init.addEventListener("input", trotinpu);\
+// const inputEl = document.querySelector('#input');
+
+// const debouncedInput = _.debounce(function(event) {
+//     console.log('Введення завершено:', event.target.value);
+// }, 500);
+
+// inputEl.addEventListener('input', debouncedInput);
+
+// const target = document.querySelector('#target');
+// const observer = new IntersectionObserver((entries) => entries.forEach(element => {
+//     if (element.isIntersecting) {
+//         console.log('Елемент в полі зору');
+//         element.target.classList.add('inview');
+//     } else {
+//         console.log('Елемент поза полем зору');
+//         element.target.classList.remove('inview');
+//     }
+// }));
+// observer.observe(target);
+
+const div = document.getElementById('div-img');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const img = document.querySelectorAll('.imgg');
+    const observer = new IntersectionObserver((entries, observer) => entries.forEach(element => {
+        if (element.isIntersecting && element.intersectionRatio >= 0.5) {
+            let targ = element.target;
+            targ.src = targ.dataset.src;
+            targ.classList.add('visible');
+            observer.unobserve(targ);
+        }
+    }))
+}, { threshold: 0.5 });
+img.forEach(img => {
+    observer.observe(img);
+})
+

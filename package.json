@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@esbuild-kit/esm-loader": "^2.6.5"
+  },
+  "dependencies": {
+    "validator": "^13.15.15"
   }
 }
